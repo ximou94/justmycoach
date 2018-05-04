@@ -6,11 +6,11 @@
 	<!-- for ie -->
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<!-- master stylesheet -->
-	<link rel="stylesheet" href="http://justmycoach.fr/css/style.css">
+	<link rel="stylesheet" href="{{asset('/css/style.css')}}">
 	<!-- responsive stylesheet -->
-	<link rel="stylesheet" href="http://justmycoach.fr/css/responsive.css">
+	<link rel="stylesheet" href="{{asset('/css/responsive.css')}}">
 	<!-- justmycoach stylesheet -->
-	<link rel="stylesheet" href="http://justmycoach.fr/css/justmycoach.css">
+	<link rel="stylesheet" href="{{asset('/css/justmycoach.css')}}">
 
     <!-- favicon -->
     <!--<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">

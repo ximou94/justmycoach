@@ -1,0 +1,124 @@
+/****** MY Rules ********/
+
+.inline-title h1, .inline-title h3 {
+
+    display:inline;
+}
+
+.footer-bloc {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.sec-title h1 {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 34px;
+	text-transform: none;
+	margin: 8px 0 14px;
+	font-family: "Open Sans",Helvetica,sans-serif;
+}
+
+.sec-title h3 {
+	font-size: 33px;
+	line-height: 38px;
+	font-weight: 700;
+	font-family: "Open Sans",Helvetica,sans-serif;
+	text-transform: uppercase;
+}
+
+.footer-bottom-area .footer-social-links li a i, .top-contact-info li, .top-bar-area .top-right .social-links li a i{
+	color: #fff;
+}
+
+.choosing-area .sec-title {
+	margin-top:0;
+}
+
+.breadcrumb-area .breadcrumbs h1{
+        text-transform:none;
+		bottom: 10px
+}
+
+hr {
+	margin-bottom:2px;
+}
+
+h3.blog-title {
+        font-size:20px!important;
+}
+
+.single-blog-item .img-holder .categories {
+	width: 135px;
+}
+
+.balance-mind-body-area {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+#project-single-area {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.footer-bloc .top-contact-info {
+	margin-left: 50px;
+}
+
+.mainmenu-area .appointment-button a::before{
+	background: none;
+}
+
+.contact-info .text-holder a {
+	color: #888888;
+}
+
+.contact-info li span::before {
+	color: #FF0000;
+	font-size: 18px;
+	line-height: 18px;
+	display: inline-block;
+	padding-right: 8px;
+}
+
+.contact-form-area.consultations-area::before {
+	background: none;
+}
+
+.consultations-area .contact-info li a i {
+	height: 40px;
+	width: 40px;
+	border: 2px solid #1C1E20;
+	display: block;
+	border-radius: 50%;
+	color: #686a6d;
+	font-size: 14px;
+	text-align: center;
+	line-height: 38px;
+	transition: all 500ms ease;
+}
+.consultations-area .contact-info li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.consultations-area .contact-info li a:hover i {
+	background: #FF0000;
+	color: #fff;
+	border-color: #FF0000;
+}
+
+.consultations-area .single-item-reseau li {
+	padding-left: 0;
+}
+
+.single-service-item .text-holder-1, .single-service-item .text-holder {
+	background: rgba(255,255,255,0.9);
+}
+
+.breadcrumb-bottom-area .left ul li a {
+	text-transform: none;
+}

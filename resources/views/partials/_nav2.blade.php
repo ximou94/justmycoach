@@ -3,7 +3,7 @@
             <div class="col-lg-12 clearfix">
                 <!--Start logo-->
                 <div class="logo pull-left">
-                    <a href="http://justmycoach.fr/index.php">
+                    <a href="{{route('home')}}">
                         <img src="http://justmycoach.fr/images/resources/logo-justmycoach.png" alt="Awesome Logo">
                     </a>
                 </div>
@@ -21,22 +21,22 @@
                         <ul class="navigation clearfix">
                             @foreach($items as $menu_item)
                                 <li class="dropdown"><a href="{{ $menu_item->link()  }}">{!! $menu_item->title  !!}</a>
-        @php
-            $submenu = $menu_item->children;
-        @endphp
+                                @php
+                                    $submenu = $menu_item->children;
+                                @endphp
 
-        @if(isset($submenu))
-            <ul class="menu">
-                @foreach($submenu as $item)
-                    <li><a href="{{$item->url}}">{{$item->title}} </a></li>
-                @endforeach
-            </ul>
-        @endif
+                                @if(isset($submenu))
+                                    <ul class="menu">
+                                        @foreach($submenu as $item)
+                                            <li><a href="{{$item->url}}">{{$item->title}} </a></li>
+                                        @endforeach
+                                    </ul>
+                                @endif
                            <div class="dropdown-btn"></div></li>
                             @endforeach
                         </ul>
                     </div>
-</nav>
+                </nav>
                 <!--End mainmenu-->
                 <!--Start mainmenu right box-->
                 <div class="mainmenu-right-box pull-right">

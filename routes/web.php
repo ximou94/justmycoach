@@ -11,19 +11,23 @@
 |
 */
 
+// =============================================
+// STATIC PAGES ================================
+// =============================================
+
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+
+// =============================================
+// BLOG PAGES ==================================
+// =============================================
 
 Route::get('/blog', function(){
     $posts = App\Post::all();
     return view('blog.category', compact('posts'));
 })->name('blog.index');
-
-Route::get('/pages', function(){
-    $pages = App\Page::all();
-    return view('pages.main', compact('pages'));
-})->name('pages.index');
 
 Route::get('/blog/{category_id}',function($category_id){
     $posts = App\Post::where('category_id','=', $category_id)->firstOrFail();
@@ -35,6 +39,20 @@ Route::get('/blog/article/{slug}', function($slug){
     return view('blog.post', compact('post'));
 })->name('blog.show');
 
+
+
+// =============================================
+// ADMIN PAGES =================================
+// =============================================
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
+// =============================================
+// PAGES =======================================
+// =============================================
+
+Route::get('{page}', 'PageController@showPage');
+Route::get('{category}/{subpage?}', 'PageController@showSubPage');

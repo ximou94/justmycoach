@@ -1,33 +1,51 @@
-@extends('blog.main')
-@section('blogcontent')
-
-<div class="blog-post">
-    <div class="row">
-        <!--Start single blog post-->
-        @foreach($pages as $page)
-        <div class="col-md-6">
-            <div class="single-blog-item wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="0" style="visibility: visible;">
-                <div class="img-holder">
-                    <img src="{{Voyager::image($page->image)}}" alt="Awesome Image">
-                    <div class="overlay-style-one"></div>
-                    <div class="categories">
-                        <a href="#">Performances</a>
-                    </div>
-                </div>
-                <div class="text-holder">
-                    <ul class="meta-info">
-                        <li><a href="#">11 avril 2018</a></li>
-                        <li><a href="#">10 Comments</a></li>
-                    </ul>
-                        <h3 class="blog-title">{{ $page->title  }}</h3>
-                    <div class="text">
-                        <p>{{$page->excerpt}}</p>
+@extends('welcome')
+@section('content')
+    <section class="breadcrumb-area" style="background-image: url({{ Voyager::image($page->image) }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>{{ $page->title }}</h1>
                     </div>
                 </div>
             </div>
         </div>
-        @endforeach
-     </div>
-</div>
-
+    </section>
+    <section class="breadcrumb-bottom-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="left pull-left">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                        <li class="active">{{ $page->title }}</li>
+                    </ul>
+                </div>
+                <!--<div class="right pull-right">
+                    <a href="#">
+                        <span><i class="fa fa-share-alt" aria-hidden="true"></i>Share</span> 
+                    </a>   
+                </div>-->
+            </div>
+        </div>
+    </div>
+    </section>
+    {!! $page->body !!}
+    <section class="slogan-area" style="color:#515253">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner-content text-center wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                    <h1>Prenez contact avec Just My Coach et profitez d’une séance d’essai offerte !
+Faites-vous rappeler en moins de 48h par votre coach sportif.</h1>
+                    <p>Just My Coach, expert en fitness et consultant en nutrition sportive et santé, vous accompagne physiquement et mentalement dans la réussite de vos objectifs.</p>
+                    <a class="thm-btn bgclr-1" href="http://justmycoach.fr/contact.php">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @stop
+
+    
