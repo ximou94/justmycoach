@@ -29,17 +29,13 @@ Route::get('/blog', function(){
     return view('blog.category', compact('posts'));
 })->name('blog.index');
 
-Route::get('/blog/{category_id}',function($category_id){
-    $posts = App\Post::where('category_id','=', $category_id)->firstOrFail();
-    return view('blog.category',compact('posts'));
-});
 
 Route::get('/blog/article/{slug}', function($slug){
     $post = App\Post::where('slug', '=', $slug)->firstOrFail();
     return view('blog.post', compact('post'));
 })->name('blog.show');
 
-
+Route::get('/blog/{category}','BlogController@showCategory');
 
 // =============================================
 // ADMIN PAGES =================================

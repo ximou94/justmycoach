@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f8fee7267f0b50360a5385ddb9e94745",
-    "content-hash": "60fcb6d7ca069baf8cae16dff5274dfa",
+    "hash": "d142657e8a7c6c415ef117d7f7d0dbdc",
+    "content-hash": "324c92766f91dd379c83077d6767eb82",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -127,16 +127,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.6.4",
+            "version": "1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "86ad51e8a3c64c9782446aae740a61fc6faa2522"
+                "reference": "b184a92419cc9a9c4c6a09db555a94d441cb11c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/86ad51e8a3c64c9782446aae740a61fc6faa2522",
-                "reference": "86ad51e8a3c64c9782446aae740a61fc6faa2522",
+                "url": "https://api.github.com/repos/composer/composer/zipball/b184a92419cc9a9c4c6a09db555a94d441cb11c9",
+                "reference": "b184a92419cc9a9c4c6a09db555a94d441cb11c9",
                 "shasum": ""
             },
             "require": {
@@ -153,6 +153,9 @@
                 "symfony/filesystem": "^2.7 || ^3.0 || ^4.0",
                 "symfony/finder": "^2.7 || ^3.0 || ^4.0",
                 "symfony/process": "^2.7 || ^3.0 || ^4.0"
+            },
+            "conflict": {
+                "symfony/console": "2.8.38"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7",
@@ -200,7 +203,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2018-04-13 10:04:24"
+            "time": "2018-05-04 09:44:59"
         },
         {
             "name": "composer/semver",
@@ -266,16 +269,16 @@
         },
         {
             "name": "composer/spdx-licenses",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/spdx-licenses.git",
-                "reference": "7e111c50db92fa2ced140f5ba23b4e261bc77a30"
+                "reference": "cb17687e9f936acd7e7245ad3890f953770dec1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/7e111c50db92fa2ced140f5ba23b4e261bc77a30",
-                "reference": "7e111c50db92fa2ced140f5ba23b4e261bc77a30",
+                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/cb17687e9f936acd7e7245ad3890f953770dec1b",
+                "reference": "cb17687e9f936acd7e7245ad3890f953770dec1b",
                 "shasum": ""
             },
             "require": {
@@ -323,7 +326,7 @@
                 "spdx",
                 "validator"
             ],
-            "time": "2018-01-31 13:17:27"
+            "time": "2018-04-30 10:33:04"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1498,16 +1501,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.44",
+            "version": "1.0.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "168dbe519737221dc87d17385cde33073881fd02"
+                "reference": "a99f94e63b512d75f851b181afcdf0ee9ebef7e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/168dbe519737221dc87d17385cde33073881fd02",
-                "reference": "168dbe519737221dc87d17385cde33073881fd02",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/a99f94e63b512d75f851b181afcdf0ee9ebef7e6",
+                "reference": "a99f94e63b512d75f851b181afcdf0ee9ebef7e6",
                 "shasum": ""
             },
             "require": {
@@ -1578,7 +1581,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2018-04-06 09:58:14"
+            "time": "2018-05-07 08:44:23"
         },
         {
             "name": "monolog/monolog",
@@ -3158,16 +3161,16 @@
         },
         {
             "name": "tcg/voyager",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/the-control-group/voyager.git",
-                "reference": "717b31f0368cb3e0cb5468fbca34ca410f8ce0b2"
+                "reference": "97291990327abc28ffca1f1703125c22413bf6da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/the-control-group/voyager/zipball/717b31f0368cb3e0cb5468fbca34ca410f8ce0b2",
-                "reference": "717b31f0368cb3e0cb5468fbca34ca410f8ce0b2",
+                "url": "https://api.github.com/repos/the-control-group/voyager/zipball/97291990327abc28ffca1f1703125c22413bf6da",
+                "reference": "97291990327abc28ffca1f1703125c22413bf6da",
                 "shasum": ""
             },
             "require": {
@@ -3221,7 +3224,7 @@
                 "laravel",
                 "panel"
             ],
-            "time": "2018-04-19 12:29:25"
+            "time": "2018-05-03 17:49:35"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
