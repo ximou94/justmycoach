@@ -14,6 +14,13 @@ class BlogController extends Controller
     $posts = Category::find($category_id)->posts;
     //$category = Category::where('slug', '=', $category);
     //$posts = $category->posts();
-    return view('blog.category',compact('posts'));
+    $categories = $this->getAllCategories();
+    return view('blog.category',compact('posts','categories','categorieCount'));
+    }
+
+    public function getAllCategories()
+    {
+    	$categories = Category::withCount('posts')->get();
+    	return $categories;
     }
 }

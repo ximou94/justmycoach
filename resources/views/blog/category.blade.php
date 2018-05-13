@@ -43,3 +43,10 @@
 </div>
 
 @stop
+@section('CategoriesContent')
+    <ul class="categories clearfix">
+     @foreach($categories as $categorie)
+            <li><a href="{{$categorie->slug}}">{{$categorie->name}}<span>({{$categorie->posts_count}})</span></a></li>
+     @endforeach
+     </ul>
+@stop
