@@ -1,4 +1,9 @@
 @extends('welcome')
+
+@section('title', $page->meta_title)
+@section('description', $page->meta_description)
+
+
 @section('content')
 <section class="breadcrumb-area" style="background-image: url({{ Voyager::image($page->image) }});">
 	<div class="container">

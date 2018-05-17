@@ -21,7 +21,6 @@
             @yield('content')
 
             @include('partials/_footer')
-
     </div>
 </body>
 

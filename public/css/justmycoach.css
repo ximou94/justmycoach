@@ -13,10 +13,10 @@
 
 
 .sec-title h1 {
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 600;
 	line-height: 34px;
-	text-transform: none;
+	text-transform: lowercase;
 	margin: 8px 0 14px;
 	font-family: "Open Sans",Helvetica,sans-serif;
 }
@@ -125,4 +125,56 @@ h3.blog-title {
 
 .top-contact-info {
     float: left;
+}
+
+.rev_slider_wrapper .slide-content-box h2 {
+	color: #FF0000;
+}
+
+.mainmenu-area .logo {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.text-footer {
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.footer-contact-info {
+    display: inline-block;
+}
+
+.footer-contact-info li {
+	color: #ffffff;
+}
+
+.footer-contact-info li span::before {
+	color: #FF0000;
+	font-size: 18px;
+	line-height: 18px;
+	display: inline-block;
+	padding-right: 8px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.sidebar-wrapper .single-sidebar .search-form input[type="text"]:focus + button, .sidebar-wrapper .single-sidebar .search-form button:hover {
+	background: #ea0000;
+}
+
+.hightlight {
+	font-size: 18px;
+    font-weight: 500; 
+    color: #000;
+}
+.col-md-6 #project-single-area {
+	padding-top: 0;
+}
+.col-md-6 #project-single-area .sec-title {
+	padding-bottom: 0;
 }

@@ -1,6 +1,9 @@
 @extends('blog.main')
-@section('blogcontent')
 
+@section('title', $categorySEO->meta_title)
+@section('description', $categorySEO->meta_description)
+
+@section('blogcontent')
 <div class="blog-post">
     @php
     $i = 0
@@ -19,8 +22,7 @@
                         </div>
                         <div class="text-holder">
                             <ul class="meta-info">
-                                <li><a href="#">11 avril 2018</a></li>
-                                <li><a href="#">10 Comments</a></li>
+                                <li><a href="#">{{$post->created_at->formatLocalized('%A %d %B %Y')}}</a></li>
                             </ul>
                             <a href="{{route('blog.show',$post->slug)}}">
                                 <h3 class="blog-title">{{ $post->title  }}</h3>
@@ -41,12 +43,12 @@
         @endforeach
      </div>
 </div>
-
 @stop
+
 @section('CategoriesContent')
     <ul class="categories clearfix">
      @foreach($categories as $categorie)
-            <li><a href="{{$categorie->slug}}">{{$categorie->name}}<span>({{$categorie->posts_count}})</span></a></li>
+            <li><a href="{{route('blog.category',['category' => $categorie->slug])}}">{{$categorie->name}}<span>({{$categorie->posts_count}})</span></a></li>
      @endforeach
      </ul>
 @stop

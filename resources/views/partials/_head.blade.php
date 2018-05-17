@@ -1,5 +1,7 @@
 	<meta charset="utf-8">
-	<title>{!! Voyager::setting('site.title') !!}</title>
+    <title>@yield('title')</title>
+    <meta name="description" content="@yield('description')">
+
 
 	<!-- responsive meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">

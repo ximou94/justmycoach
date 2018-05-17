@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
 
-                       <div class="col-md-9 col-sm-12 col-xs-12" >
+                       <div class="col-md-8 col-sm-12 col-xs-12 vcenter">
 <div class="footer-bloc">
  <a href="index.html">
 		    <img src="http://justmycoach.fr/images/resources/logo-justmycoach.png" alt="Awesome Footer Logo">
@@ -10,12 +10,16 @@
 </div>
                 <div class="footer-bloc">
                     <ul class="top-contact-info">
+                        <li class="text-center"><p class="text-footer">SPORT - FITNESS - NUTRITION <br> <span style="color:#ff0000;">MONPELLIER</span></p></li>
+                    </ul>
+                    
+                </div>
+            </div><!--
+        --><div class="col-md-4 vcenter">
+                <ul class="footer-contact-info">
                         <li><span class="flaticon-technology"></span>Téléphone: 06 44 31 91 89</li>
                         <li><span class="flaticon-note"></span>justmycoach34@gmail.com</li>
                     </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
 		<ul class="footer-social-links">
                         <li><a href="https://www.facebook.com/antoine.milhorne.1"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/antoinemilhorne"><i class="fa fa-linkedin"></i></a></li>
